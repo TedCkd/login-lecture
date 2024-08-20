@@ -5,13 +5,13 @@
   },
   "name": "express",
   "version": "1.0.0",
-  "main": "backend_1.js",
+  "main": "app.js",
   "bin": {
     "express": "bin/www.js"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ./bin/www.js",
+    "start": "nodemon ./bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
