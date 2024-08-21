@@ -12,4 +12,13 @@ function login() {
         psword : psword.value,
     };
     console.log(req);
+    console.log(JSON.stringify(req)); // 문자열로 바꿔줌.
+
+    fetch("/login",{
+        method : "POST",
+        headers : {
+            "Content-Type": "application/json",
+        },
+        body : JSON.stringify(req)
+    })
 }
